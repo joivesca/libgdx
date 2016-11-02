@@ -1,13 +1,9 @@
 package mx.com.chilitech.zombiebird;
 
-import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-import mx.com.chilitech.zombiebird.screens.GameScreen;
+import mx.com.chilitech.zombiebird.screens.SplashScreen;
 import mx.com.chilitech.zombiebird.zbhelpers.AssetLoader;
 
 public class ZBGame extends Game {
@@ -16,7 +12,7 @@ public class ZBGame extends Game {
 	public void create() {
 		Gdx.app.log("ZBGame", "created");
         AssetLoader.load();
-        setScreen(new GameScreen());
+        setScreen(new SplashScreen(this));
 	}
 	
 	@Override
