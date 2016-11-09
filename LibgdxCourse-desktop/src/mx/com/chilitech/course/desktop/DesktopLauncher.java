@@ -5,10 +5,17 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 
-
+import mx.com.chilitech.course.Drop;
+import mx.com.chilitech.course.HelloWorld;
+import mx.com.chilitech.course.MyCircleSprite;
 import mx.com.chilitech.course.chapter12.CanyonBunnyMain;
 import mx.com.chilitech.course.chapter13.MyModelTest;
 import mx.com.chilitech.course.chapter14.MyCollisionTest;
+import mx.com.chilitech.course.splash.MyMainScreen;
+import mx.com.chilitech.course.splash.MySplashGame;
+import mx.com.chilitech.course.splash.MySplashScreen;
+import mx.com.chilitech.course.tweenengine.MyTweenGame;
+import mx.com.chilitech.course.tweenengine.MyTweenGame2;
 
 
 public class DesktopLauncher {
@@ -129,7 +136,7 @@ public class DesktopLauncher {
 		 */
 		
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		new LwjglApplication(new MyCollisionTest(), config);
+		new LwjglApplication(new MyTweenGame2(), config);
 		
 	}
 }
